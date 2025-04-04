@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/${input:entryFile}",
+      "preLaunchTask": "build"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "entryFile",
+      "description": "Enter the relative path to the file you want to debug (e.g., src/hoverboard-app.ts)"
+    }
+  ]
+}
